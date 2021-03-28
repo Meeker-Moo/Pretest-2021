@@ -1,1 +1,6 @@
-<p>question-two works!</p>
+<form  [formGroup]="form">
+    <input type="text" formControlName="SEARCH"  />
+</form>
+<ng-container *ngFor="let item of displayDataList">
+    <div> {{item}} </div>
+</ng-container>
