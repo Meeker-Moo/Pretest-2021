@@ -1,0 +1,37 @@
+:host {
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+
+        .div-left {
+            background-color: green;
+            width: 200px;
+        }
+
+        .div-middle {
+            background-color: greenyellow;
+            width: calc(100% - 500px);
+        }
+
+        .div-right {
+            background-color: palevioletred;
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 700px;
+            overflow-y: auto;
+
+            .div-middle {
+                background-color: greenyellow;
+                width: 250px;
+            }
+        }
+    }
+}

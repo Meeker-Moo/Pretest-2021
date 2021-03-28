@@ -1,0 +1,12 @@
+<div class="container" [formGroup]="form">
+    <div class="div-left">
+        <input type="number" formControlName="NUMBER" (blur)="onBlurNumber()">
+    </div>
+    <div class="div-middle">
+        <select formControlName="SELECT">
+            <option value="isPrime">isPrime</option>
+            <option value="isFibonacci">isFibonacci</option>
+        </select>
+    </div>
+    <div class="div-right">{{result}}</div>
+</div>
